@@ -15,6 +15,7 @@ alert("The answer is 4!");//after all try's used alert("The answer is 4");
 
 
 
+let gamePoint = 0
 
 //Add a question with multiple correct answers 
 prompt("What city would I like to visit?");
@@ -26,15 +27,21 @@ let citiesToVisit = ['New Orleans', 'St. Louis', 'San Diego', 'San Francisco'];
 //give the user 6 attempts to guess the correct answer
 for (let guesses = 1; guesses < 7; guesses++)
 
-
 //guesses end once correct answer guessed
-if (guesses === citiesToVisit[])
+if (guesses === citiesToVisit[0])
 
 //display all possible correct answers to the user
 alert("These are the cities I want to visit: New Orleans, St. Louis, San Diego, San Francisco")
 
 //keep track of total number of correct answer
-
+if ( guesses === citiesToVisit[0]) 
+{
+  alert(gamePoint++);
+}
+else
+{
+  alert(gamePoint);
+}
 
 
 
