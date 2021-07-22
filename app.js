@@ -1,3 +1,21 @@
+//give the user four try's
+for (let tries = 1; tries < 5; tries++)
+{
+    let userAnswer = prompt("Guess a number between 1 and 5")//take in a numeric input by prompting the user to guess a number
+    if(userAnswer > 4)
+    {
+        alert("That's too high!");//Use alert if userAnswer is too high 
+    }
+    if(userAnswer < 4)//use alert if userAnser is too low
+    {
+        alert("That's too low!");
+    }
+}
+alert("The answer is 4!");//after all try's used alert("The answer is 4");
+
+
+
+
 //Add a question with multiple correct answers 
 prompt("What city would I like to visit?");
 
@@ -10,13 +28,13 @@ for (let guesses = 1; guesses < 7; guesses++)
 
 
 //guesses end once correct answer guessed
-if (guesses === 'New Orleans')
+if (guesses === citiesToVisit[])
 
 //display all possible correct answers to the user
 alert("These are the cities I want to visit: New Orleans, St. Louis, San Diego, San Francisco")
 
 //keep track of total number of correct answer
-if ( guesses === 'New York' ||)
+
 
 
 
