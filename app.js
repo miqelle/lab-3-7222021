@@ -13,68 +13,23 @@ for (let tries = 1; tries < 5; tries++)
 }
 alert("The answer is 4!");//after all try's used alert("The answer is 4");
 
-
-//variable to hold game point
-let gamePoint = 0
-//give the user 6 attempts to guess the correct answer
-for (let guesses = 1; guesses < 7; guesses++)
-{
-//Add a question with multiple correct answers 
- let userAnswer = prompt("What city would I like to visit?");
+let userAnswer = prompt("What city would I like to visit?");
 //create an array
 let citiesToVisit = ['New Orleans', 'St. Louis', 'San Diego', 'San Francisco'];
-for ( i = 0; i < citiesToVisit.length; i++)//this goes through the length of the array
+
 {
-  console.log(citiesToVisit[i]);
-/*   if (userAnswer === citiesToVisit[i])
-  {
-     document.Write(gamePoint++);
-  }
-}
- */
-
-/* //guesses end once correct answer guessed
-if (userAnswer === citiesToVisit[0])
-
-
-//display all possible correct answers to the user
-alert("These are the cities I want to visit: New Orleans, St. Louis, San Diego, San Francisco")
-
-//keep track of total number of correct answer
-if ( userAnswer === citiesToVisit[0]) 
+/* for ( i = 0; i < citiesToVisit.length; i++)
 {
-  alert(gamePoint++);
-}
-else
+    console.log(citiesToVisit[i]);
+} */
+if ( userAnswer === citiesToVisit[0])
 {
-  alert(gamePoint);
-} 
-*/
+    alert("That's the number one city I want to visit! 😊");
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-/* let userPoints = 0;
-alert('Welcome to my third guessing game ' + userName + "!");
-
-let answerto = prompt('Is my number one place to visit New Orleans?', 'Type yes or no').toLowerCase();
-console.log(answer);
-
-let placesToGo = ['New Orleans', 'St. Louis', 'San Diego', 'San Francisco'];
-
-for (let i = 0; i < placesToGo.length; i++) {
-  console.log(placesToGo[i]);
-if (answer === 'yes' || answer === 'y') {
-  userPoints++;
+else {
+    for ( i = 0; i < 7; i++)//this for loop asks the user the question 6 times, and then tells them all possible answer
+    {
+        prompt("What's the number one city I want to visit?");
+    }
+    alert("All possible answers: New Orleans, St. Louis, San Diego, San Francisco");
 }
-alert('You could have guessed either one of these: New Orleans, St.Louis, San Diego, or San Francisco');
-alert('you have ' + userPoints + ' points.') */
